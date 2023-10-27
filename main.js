@@ -23,3 +23,19 @@ console.log(division(6,2))
 
 const miNombre = (nombre) => `Mi nombre es ${nombre}`
 console.log(miNombre("Adrián"))
+
+// Convierte las siguientes funciones en funciones flecha:
+// function test2() {
+//   console.log("Función test 2 ejecutada.");
+// }
+// function test1(callback) {
+//   callback();
+// }	
+
+const test2 = () => "Función test 2 ejecutada."
+console.log(test2());
+const test1 = (callback) => {
+    callback()
+  }
+console.log(test1(callback))
+
