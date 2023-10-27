@@ -37,5 +37,46 @@ console.log(test2());
 const test1 = (callback) => {
     callback()
   }
-console.log(test1(callback))
+test1(test2)
+
+
+
+
+//Funciones foreach.
+
+//Utiliza la siguiente array para resolver los próximos ejercicios: 
+      
+let gente = [
+        {
+          nombre: "Jamiro",
+          edad: 45,
+        },
+        {
+          nombre: "Juan",
+          edad: 35,
+        },
+        {
+          nombre: "Paco",
+          edad: 34,
+        },
+        {
+          nombre: "Pepe",
+          edad: 14,
+        },
+        {
+          nombre: "Pilar",
+          edad: 24,
+        },
+        {
+          nombre: "Laura",
+          edad: 24,
+        },
+        {
+          nombre: "Jenny",
+          edad: 10,
+        },
+      ];
+
+const ageOver = gente.filter((gente)=> gente.edad > 25)
+console.log(ageOver)
 
